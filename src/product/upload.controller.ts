@@ -20,7 +20,7 @@ export class UploadController {
     uploadFile(@UploadedFile() file) {
         console.log(file);
         return {
-            url: `http://localhost:8000/api/uploads/${file.filename}`
+            url: `http://localhost:3000/api/uploads/${file.filename}`
         }
     }
 

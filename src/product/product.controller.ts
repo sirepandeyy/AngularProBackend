@@ -2,7 +2,7 @@ import {Body, Controller, Delete, Get, Param, Post, Put, Query, UseGuards} from 
 import {ProductService} from "./product.service";
 import {AuthGuard} from "../auth/auth.guard";
 import {ProductCreateDto} from "./models/product-create.dto";
-import {ProductUpdateDto} from "./models/product-update.dto";
+import { ProductUpdateDto } from './models/product-update.dto';
 
 @UseGuards(AuthGuard)
 @Controller('products')

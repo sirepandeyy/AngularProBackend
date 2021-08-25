@@ -1,16 +1,13 @@
-import {Module} from '@nestjs/common';
-import {JwtModule} from "@nestjs/jwt";
+import { Module } from '@nestjs/common';
+import { JwtModule } from '@nestjs/jwt';
 
 @Module({
-    imports: [
+    imports:[
         JwtModule.register({
             secret: 'secret',
-            signOptions: {expiresIn: '1d'},
-        }),
+           signOptions: { expiresIn: '1d' },
+         }),
     ],
-    exports: [
-        JwtModule
-    ]
+    exports:[JwtModule]
 })
-export class CommonModule {
-}
+export class CommonModule {}

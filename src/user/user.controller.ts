@@ -41,14 +41,16 @@ export class UserController {
     async create(@Body() body: UserCreateDto): Promise<User> {
         const password = await bcrypt.hash('1234', 12);
 
-        const {role_id, ...data} = body;
+        const {role_id , ...data} = body;
 
         return this.userService.create({
             ...data,
             password,
-            role: {id: role_id}
+            role: {id: role_id},
         });
     }
+
+    
 
     @Get(':id')
     @HasPermission('users')

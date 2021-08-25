@@ -1,0 +1,3 @@
+[submodule "AngularProBackend"]
+	path = AngularProBackend
+	url = https://github.com/sirepandeyy/AngularProBackend

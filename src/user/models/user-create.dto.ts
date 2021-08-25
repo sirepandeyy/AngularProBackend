@@ -13,4 +13,7 @@ export class UserCreateDto {
 
     @IsNotEmpty()
     role_id: number;
+
+    @IsNotEmpty()
+    tenent_id: number;
 }

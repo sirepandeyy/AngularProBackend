@@ -11,4 +11,5 @@ export class RoleService extends AbstractService {
     ) {
         super(roleRepository);
     }
+    
 }
